@@ -1,0 +1,111 @@
+/* game-style.css */
+
+/* Base styling for the game container */
+.game {
+    width: 100vw;
+    height: 100vh;
+    background: url(../../assets/background.jpg) center center/cover;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: flex-start; /* Align children at the top */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Styling for the game information box */
+.game-info {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background color */
+    padding: 10px; /* Adjust padding */
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px; /* Add margin bottom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for box */
+    display: flex; /* Use flexbox for one-line layout */
+    justify-content: space-around; /* Spread items evenly */
+    align-items: center; /* Center items vertically */
+
+}
+
+.game-info h2 {
+    font-size: 20px; /* Adjust font size */
+    margin: 0; /* Remove default margin */
+}
+
+.game-info p {
+    font-size: 16px;
+    color: #333;
+    margin: 0; /* Remove default margin */
+}
+
+.board-chat-container {
+    position: relative; /* Ensure relative positioning for absolute child */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px; /* Max width to constrain layout */
+    margin-top: 20px; /* Add margin at the top */
+}
+
+
+/* Styling for the board container */
+.board-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Styling for the move history */
+.move-history {
+    margin-left: 20px;
+    margin-top: 50px; /* Lower the position */
+    background-color: white; /* White background */
+    padding: 10px; /* Add padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for box */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.move-history ol {
+    height: 400px; /* Set the desired height */
+    width: 180px;
+    overflow-y: auto; /* Show a vertical scrollbar when needed */
+    border: 1px solid #ccc;
+    padding-left: 30px;
+    background-color: white; /* Ensure the list has a white background */
+}
+
+/* Styling for the resign button */
+.resign-button > button{
+    position: absolute; /* Ensure absolute positioning */
+    bottom: 200px; /* 20px from the bottom */
+    left: -300px; /* 20px from the left */
+    padding: 15px 32px;
+    margin: 4px 2px;
+    font-size: 16px; /* Adjust font size */
+    background-color: purple; /* Green */
+    color: white; /* White text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensure it appears above other content */
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    width:10%;
+   
+}
+.resign-button:hover > button {
+    background-color: #3e8e41; 
+}
+
+
+

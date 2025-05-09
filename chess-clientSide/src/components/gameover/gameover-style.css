@@ -1,0 +1,45 @@
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 2rem;
+  width:700px;
+ 
+  }
+
+  .content h1 {
+	font-size: 3rem;
+	color: white;
+	margin-bottom: 1rem;
+  }
+  
+  .content p {
+	font-size: 1.5rem;
+	color: white;
+	margin-bottom: 1rem;
+  }
+  
+ 
+
+  .return-home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white; /* Blue color */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px; /* Adjust margin as needed */
+    transition: background-color 0.3s ease;
+}
+
+.return-home-button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+link {
+  color:white;
+}
+
+  

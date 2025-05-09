@@ -1,0 +1,91 @@
+/* Apply background image and font */
+body {
+    background: url("../../assets/background.jpg") center center/cover no-repeat;
+    font-family: "Roboto", Arial, sans-serif; /* Different font */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure full viewport height */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Container styles to manage layout */
+.containerHome {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    height: 100vh; /* Use full viewport height */
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%; /* Ensure it takes full width of its container */
+    max-width: 500px; /* Set maximum width */
+    margin: 0 auto; /* Auto margin left and right to center */
+    
+}
+
+
+/* Styling for the left panel (create game) */
+.createGame {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px; /* Increased padding for more space */
+    width: 45%; /* Adjusted width */
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the right panel (join game) */
+.joinGame {
+    /* Styling for the right panel (join game) */
+
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px; /* Increased padding for more space */
+    width: 90%; /* Adjusted width to 90% */
+    max-width: 900px; /* Adjusted max-width to 900px */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-left: 20px; /* Add margin between createGame and joinGame */
+}
+
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Adjusted max-width for forms */
+}
+
+input {
+    width: 100%;
+    padding: 1.2rem 1.5rem; /* Increased padding */
+    margin: 15px 0; /* Increased margin */
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: slateblue;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 1.2rem;
+    margin: 15px 0; /* Increased margin */
+    border: none;
+    border-radius: 30px;
+    background-color: slateblue;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #5d478b;
+}
+

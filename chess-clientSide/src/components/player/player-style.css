@@ -1,0 +1,35 @@
+.player {
+    margin: 1.5rem;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    border-radius: 2.5rem;
+    position: absolute;
+    z-index: 2;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: "Roboto", Arial, sans-serif; /* Keep the font consistent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(56, 55, 55); /* Dark text color */
+}
+
+.player1 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    background-color: #4CAF50; /* Green color for "you" */
+    top: 2.5rem;
+    left: 1.2rem;
+}
+
+.player2 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    background-color: red; /* Blue color for "opponent" */
+    top: 2.5rem;
+    right: 1.2rem;
+}
+
+.king {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%; /* Make it round */
+}
